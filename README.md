@@ -182,8 +182,8 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
         print(f'Epoch [{epoch+1}/{num_epochs}], Train Loss: {train_losses[-1]:.4f}, Validation Loss: {val_losses[-1]:.4f}')
 
     # Plot training and validation loss
-    print("Name:AVINESH B")
-    print("Register Number: 212224230029")
+    print("Name:SARAVANAN SHAM PRAKASH")
+    print("Register Number: 212224230254")
     plt.figure(figsize=(8, 6))
     plt.plot(range(1, num_epochs + 1), train_losses, label='Train Loss', marker='o')
     plt.plot(range(1, num_epochs + 1), val_losses, label='Validation Loss', marker='s')
@@ -231,8 +231,8 @@ def test_model(model, test_loader):
     # Compute confusion matrix
     class_names=['Negative','Positive']
     cm = confusion_matrix(all_labels, all_preds)
-    print("Name:AVINESH B")
-    print("Register Number: 212224230029")
+    print("Name:SARAVANAN SHAM PRAKASH")
+    print("Register Number: 212224230254")
     plt.figure(figsize=(6,5))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=train_dataset.classes, yticklabels=train_dataset.classes)
     plt.xlabel('Predicted')
@@ -241,8 +241,8 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print("Name:AVINESH B")
-    print("Register Number: 212224230029")
+    print("Name:SARAVANAN SHAM PRAKASH")
+    print("Register Number: 212224230254")
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=train_dataset.classes))
 
@@ -288,15 +288,15 @@ predict_image(model, image_index=25, dataset=test_dataset)
 
 ## Training Loss, Validation Loss Vs Iteration Plot
 
-<img width="1054" height="727" alt="image" src="https://github.com/user-attachments/assets/734bbd96-0409-4632-a554-e792110501a9" />
+<img width="1117" height="728" alt="image" src="https://github.com/user-attachments/assets/8e879e96-d75f-4a93-879a-418a82876799" />
 
 ## Confusion Matrix
-<img width="942" height="726" alt="image" src="https://github.com/user-attachments/assets/f80b1324-f6d6-49d3-96a2-f5eccb372704" />
+<img width="1118" height="807" alt="image" src="https://github.com/user-attachments/assets/ca466571-ee92-4ebe-b700-f6f3485ba953" />
 
 
 ## Classification Report
 
-<img width="575" height="251" alt="image" src="https://github.com/user-attachments/assets/14ee46f7-466e-42e0-9bb5-245f12ee27f2" />
+<img width="718" height="252" alt="image" src="https://github.com/user-attachments/assets/c6b42b3a-d48d-4199-95cf-7107fa748d80" />
 
 
 
